@@ -1,6 +1,4 @@
-using System;
 using System.Collections.Generic;
-
 
 namespace SyaApi.Entities
 {
@@ -14,10 +12,23 @@ namespace SyaApi.Entities
 
 
     }
-    public class FavoriteItemEntity
+        public class FavoriteItemEntity
     {
         public int total{get; set;}
         public List<FavoriteEntity> FavoriteItem{get;set;}
 
     }
+
+    public class HasFavoriteEntity
+    {
+        public int favorite_id { get; set; }
+
+        public int work_id { get; set; }
+
+        public string add_name { get; set; }
+    }
+
+
+
+
 }
