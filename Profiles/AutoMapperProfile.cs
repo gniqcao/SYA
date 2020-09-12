@@ -15,10 +15,14 @@ namespace SyaApi.Profiles
             CreateMap<ResumeEntity, ResumeResponse>();
 
             CreateMap<ProvideWorkRequest, WorkEntity>();
+            CreateMap<UpdateWorkRequest, WorkEntity>();
             CreateMap<WorkEntity, WorkResponse>();
 
             CreateMap<LeaveRequest, LeaveEntity>();
             CreateMap<LeaveEntity, LeaveResponse>();
+            CreateMap<LeaveRequest, LeaveEntity>();
+            CreateMap<LeaveEntity, LeaveInfoResponse>();
+
 
             CreateMap<UserRequest, UserEntity>();
             CreateMap<UserEntity, UserResponse>();
@@ -29,26 +33,24 @@ namespace SyaApi.Profiles
 
             CreateMap<HistoryRequest, HistoryEntity>();
             CreateMap<HistoryEntity, HistoryResponse>();
-            CreateMap<ViewHistoryRequest, HistoryItemEntity>();
-            CreateMap<HistoryItemEntity, HistoryResponse>();
-
 
             CreateMap<UserEntity, UserInfoResponse>();
 
             CreateMap<ApplyRequest, ApplyEntity>();
             CreateMap<ApplyEntity, ApplyResponse>();
 
+            CreateMap<MessageStatusRequest, MessageEntity>();
+            CreateMap<MessageRequest, MessageEntity>();
+            CreateMap<MessageEntity, MessageResponse>();
+
+            CreateMap<AnnounceStatusRequest, AnnounceEntity>();
+
             CreateMap<FavoriteRequest, FavoriteEntity>();
             CreateMap<FavoriteEntity, FavoriteResponse>();
-            CreateMap<CFavoriteRequest, FavoriteItemEntity>();
-            CreateMap<FavoriteItemEntity, FavoriteResponse>();
-            CreateMap<CrFavoriteRequest, FavoriteEntity>();
+            CreateMap<CFavoriteRequest, FavoriteEntity>();
             CreateMap<FavoriteEntity, FavoriteResponse>();
-
-            CreateMap<FhasworkRequest, FhasworkEntity>();
-            CreateMap<FhasworkEntity, FhasworkResponse>();
-            CreateMap<ViewRequest, FhasworkItemEntity>();
-            CreateMap<FhasworkItemEntity, FhasworkItemResponse>();
+            CreateMap<HasFavoriteRequest, HasFavoriteEntity>();
+            
             
 
 
